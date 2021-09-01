@@ -3,12 +3,13 @@ import './App.css';
 import {useState} from 'react'
 
 function App() {
-  const [board, setBoard] = useState(['', '', '', '', '', '', '', '', '')
+  const [board, setBoard] = useState(['', '', '', '', '', '', '', '', ''])
+  
   return (
     <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    {/* <h1>Hello World</h1> */}
     <div className="board"></div>
+    </div>
   );
 }
 

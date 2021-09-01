@@ -8,7 +8,11 @@ function App() {
   return (
     <div className="App">
     {/* <h1>Hello World</h1> */}
-    <div className="board"></div>
+    <div className="board">
+      <div className="row"></div>
+      <div className="row"></div>
+      <div className="row"></div>
+    </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {useState} from 'react'
 import Square from './Components/Square';
@@ -8,12 +8,19 @@ function App() {
   
   return (
     <div className="App">
-    {/* <h1>Hello World</h1> */}
+    <h1>Hello World</h1>
     <div className="board">
       <div className="row">
         <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
-        <Square/>
-        <Square/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+        <Square val={board[0]} chooseSquare={() => {alert(0)}}/>
+    
       </div>
       <div className="row"></div>
       <div className="row"></div>

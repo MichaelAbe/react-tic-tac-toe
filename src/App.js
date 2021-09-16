@@ -20,10 +20,10 @@ function App() {
         <Square val={board[4]} chooseSquare={() => {alert(4)}}/>
         <Square val={board[5]} chooseSquare={() => {alert(5)}}/>
       </div>
+      <div className="row">
         <Square val={board[6]} chooseSquare={() => {alert(6)}}/>
         <Square val={board[7]} chooseSquare={() => {alert(7)}}/>
         <Square val={board[8]} chooseSquare={() => {alert(8)}}/>
-      <div className="row">
 
       </div>
     

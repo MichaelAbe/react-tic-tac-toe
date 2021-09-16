@@ -6,24 +6,27 @@ import Square from './Components/Square';
 function App() {
   const [board, setBoard] = useState(['', '', '', '', '', '', '', '', ''])
   
+  const chooseSquare = (square) => {
+
+  }
   return (
     <div className="App">
     {/* <h1>Hello World</h1> */}
     <div className="board">
       <div className="row">
-        <Square val={board[0]} chooseSquare={() => {alert(0)}} />
-        <Square val={board[1]} chooseSquare={() => {alert(1)}}/>
-        <Square val={board[2]} chooseSquare={() => {alert(2)}}/>     
+        <Square val={board[0]} chooseSquare={() => chooseSquare(0)} />
+        <Square val={board[1]} chooseSquare={() => chooseSquare(1)} />
+        <Square val={board[2]} chooseSquare={() => chooseSquare(2)} />  
       </div>
       <div className="row">
-        <Square val={board[3]} chooseSquare={() => {alert(3)}}/>
-        <Square val={board[4]} chooseSquare={() => {alert(4)}}/>
-        <Square val={board[5]} chooseSquare={() => {alert(5)}}/>
+        <Square val={board[3]} chooseSquare={() => chooseSquare(3)} />
+        <Square val={board[4]} chooseSquare={() => chooseSquare(4)} />
+        <Square val={board[5]} chooseSquare={() => chooseSquare(5)} />
       </div>
       <div className="row">
-        <Square val={board[6]} chooseSquare={() => {alert(6)}}/>
-        <Square val={board[7]} chooseSquare={() => {alert(7)}}/>
-        <Square val={board[8]} chooseSquare={() => {alert(8)}}/>
+        <Square val={board[6]} chooseSquare={() => chooseSquare(6)} />
+        <Square val={board[7]} chooseSquare={() => chooseSquare(7)} />
+        <Square val={board[8]} chooseSquare={() => chooseSquare(8)} />
 
       </div>
     

@@ -14,6 +14,12 @@ function App() {
       return val
     })
     )
+    if (player == "X") {
+      setplayer('O')
+    }
+    else{
+      setplayer('X')
+    }
   }
   return (
     <div className="App">

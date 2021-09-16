@@ -5,9 +5,15 @@ import Square from './Components/Square';
 
 function App() {
   const [board, setBoard] = useState(['', '', '', '', '', '', '', '', ''])
-  
+  const [player, setplayer] = useState("X")
   const chooseSquare = (square) => {
-
+    setBoard(board.map((val, idx) => {
+      if (idx == square && val == "") {
+        return player
+      }
+      return val
+    })
+    )
   }
   return (
     <div className="App">

@@ -8,13 +8,13 @@ function App() {
   const [player, setplayer] = useState("X")
   const chooseSquare = (square) => {
     setBoard(board.map((val, idx) => {
-      if (idx == square && val == "") {
+      if (idx === square && val === "") {
         return player
       }
       return val
     })
     )
-    if (player == "X") {
+    if (player === "X") {
       setplayer('O')
     }
     else{

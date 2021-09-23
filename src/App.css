@@ -14,7 +14,7 @@ body {
 .board {
   width: 500px;
   height: 500px;
-  background-color: purple;
+  background-color: rgb(88, 20, 88);
   border: 1px solid gold;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,12 @@ body {
   cursor: pointer;
   display: grid;
   place-items: center;
-  font-size: 30px;
-  color: black;
+  font-size: 100px;
+  font-weight: 1000;
+  color: rgb(61, 173, 168);
   
+}
+
+.square:active {
+  background-color: rgb(61, 173, 168);
 }

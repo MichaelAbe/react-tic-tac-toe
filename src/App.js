@@ -24,6 +24,7 @@ function App() {
   useEffect(() => {
     if (result.state != "none") {
       alert(`${result.winner} WINS!`)
+      reStart()
     }
     
   }, [result])

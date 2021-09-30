@@ -10,6 +10,7 @@ function App() {
   const [player, setplayer] = useState("O")
   const [result, setResult] = useState({winner: "none", state: "none"})
 
+
   useEffect(() => {
     checkWin()
     checkIfTie()
@@ -28,6 +29,14 @@ function App() {
     }
     
   }, [result])
+
+  const activePlayer = () => {
+    if (player === "X") {
+      alert(`${player} to move`)
+    }
+    else{
+    }
+  }
 
   const chooseSquare = (square) => {
     setBoard(board.map((val, idx) => {
@@ -95,6 +104,9 @@ function App() {
       </div>
     
     </div>
+      <div className="active">
+        activePlayer()
+      </div>
     </div>
   );
 }

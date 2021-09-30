@@ -54,6 +54,15 @@ function App() {
     })
   }
 
+  const checkIfTie = () => {
+    let filled = true
+    board.forEach((square) => {
+      if (square == "") {
+        filled = false
+      }
+    })
+  }
+
   return (
     <div className="App">
     {/* <h1>Hello World</h1> */}

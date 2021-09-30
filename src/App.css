@@ -14,8 +14,8 @@ body {
 .board {
   width: 500px;
   height: 500px;
-  background-color: rgb(88, 20, 88);
-  border: 1px solid gold;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
 
@@ -25,7 +25,7 @@ body {
   flex: 33%;
   display: flex;
   flex-direction: row;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .square {
@@ -37,7 +37,7 @@ body {
   place-items: center;
   font-size: 100px;
   font-weight: 1000;
-  color: rgb(61, 173, 168);
+  color: rgb(27, 27, 27);
   
 }
 

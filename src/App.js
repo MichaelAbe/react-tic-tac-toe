@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     checkWin()
+    checkIfTie()
     if (player === "X") {
       setplayer('O')
     }
@@ -49,7 +50,7 @@ function App() {
       })
       
       if (foundWinning) {
-        setResult({winner: player, state: 'won'})
+        setResult({winner: player, state: 'Won'})
       }
     })
   }
@@ -61,6 +62,9 @@ function App() {
         filled = false
       }
     })
+    if (filled) {
+      setResult({winner: "No winner", state: "Tie"})
+    }
   }
 
   return (

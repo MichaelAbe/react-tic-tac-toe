@@ -67,6 +67,11 @@ function App() {
     }
   }
 
+  const reStart = () => {
+    setBoard(['', '', '', '', '', '', '', '', ''])
+    setplayer('X')
+  }
+
   return (
     <div className="App">
     {/* <h1>Hello World</h1> */}
